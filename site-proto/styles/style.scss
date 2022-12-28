@@ -1,0 +1,20 @@
+@use 'colors' as *;
+
+
+@mixin font {
+    font-style: italic;
+}
+
+body {
+    @include font;
+    background-color: $main-bg-color;
+}
+
+.top-header {
+    padding-top: 30px;
+
+}
+
+.site-logo {
+}
+
