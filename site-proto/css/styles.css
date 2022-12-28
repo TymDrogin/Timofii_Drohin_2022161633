@@ -1,7 +1,7 @@
-.body {
-  background-color: #FFFFFF;
+body {
+  background-color: white;
 }
 
-.top__header {
-  color: #FFFFFF;
+header .top {
+  background: white;
 }/*# sourceMappingURL=styles.css.map */
