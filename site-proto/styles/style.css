@@ -23,14 +23,25 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.top-header {
-  background-color: white;
+.page-header__left__logo .slogan {
+  color: #020309;
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 11px;
+  text-align: right;
 }
-.top-header .first-section {
-  padding-top: 50px;
-  border: 1px solid blue;
+
+.links-list .category {
+  font-weight: bolder;
 }
-.top-header .second-section {
-  padding-top: 50px;
-  border: 1px solid blue;
+.links-list .link {
+  font-weight: bolder;
+  -webkit-text-decoration: underline solid gray;
+          text-decoration: underline solid gray;
+  color: gray;
+}
+.links-list .link:hover {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
 }/*# sourceMappingURL=style.css.map */

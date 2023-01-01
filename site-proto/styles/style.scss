@@ -1,17 +1,23 @@
-@use 'colors' as *;
+@use "colors" as *;
 
-*,*:before,*:after {
+*,
+*:before,
+*:after {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
-nav, footer, header, aside {
+nav,
+footer,
+header,
+aside {
     display: block;
     outline: 1px solid black;
 }
 
-html, body {
+html,
+body {
     width: 100%;
     height: 100%;
     font-size: 100%;
@@ -22,21 +28,46 @@ html, body {
     -webkit-text-size-adjust: 100%;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-size: inherit;
     font-weight: 400;
 }
 
-.top-header {
-    background-color: $main-bg-color;
+.page-header {
+    &__left {
+        &__logo {
+            .logo {
+            }
 
-    .first-section {
-        padding-top: 50px;    
-        border: 1px solid blue;
+            .slogan {
+                color: #020309;
+                display: block;
+                font-size: 13px;
+                font-weight: 600;
+                line-height: 11px;
+                text-align: right;
+            }
+        }
+    }
+}
+
+
+.links-list {
+    .category {
+        font-weight: bolder;
     }
 
-    .second-section{
-        padding-top: 50px;    
-        border: 1px solid blue;
+    .link {
+        font-weight: bolder;
+        text-decoration: underline solid $link-list-color;
+        color: $link-list-color;
+        &:hover {
+            text-decoration-line: none;
+        }
     }
 }
