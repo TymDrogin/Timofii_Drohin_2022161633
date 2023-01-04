@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 *,
 *:before,
 *:after {
   box-sizing: border-box;
 }
+
 nav,
 footer,
 header,
@@ -36,8 +38,6 @@ body {
   margin: 0 0 0 0;
 }
 
-
-
 .page-header {
   background: #ffffff;
   position: -webkit-sticky;
@@ -64,7 +64,6 @@ body {
   display: flex;
   align-items: center;
   box-sizing: border-box;
-  background-color: grey;
 }
 .page-header__left__logo_1 {
   width: 202px;
@@ -75,9 +74,10 @@ body {
   display: block;
   color: #020309;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 550;
   line-height: 11px;
   text-align: right;
+  font-family: "Lato", sans-serif;
 }
 .page-header__left__logo_2 {
   margin-left: 16px;
@@ -101,7 +101,6 @@ body {
 
 .main {
   display: flex;
-  background-color: grey;
   background-image: no-repeat url("../img/banners/bg-flyer.jpg");
   height: 100%;
 }
