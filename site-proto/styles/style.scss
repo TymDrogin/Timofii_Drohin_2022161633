@@ -130,6 +130,7 @@ body {
             margin-right: 24px;
             line-height: 18px;
         }
+
         .button {
             box-sizing: border-box;
             background-color: transparent;
@@ -148,16 +149,17 @@ body {
 }
 
 .main {
-    background-image: url("../img/banners/bg-flyer.jpg");
+    //background-image: url("../img/banners/bg-flyer.jpg");
     background-repeat: no-repeat;
     background-position-x: center;
     background-color: $main-bg-color;
     width: 100%;
-    height: 1000px;
+
     &__poster-block {
         display: none;
         justify-content: center;
         padding: 16px;
+
         &__image {
             box-sizing: border-box;
             max-height: 360px;
@@ -168,19 +170,34 @@ body {
 
     &__nav-list {
         padding: 0 8px;
-        &__category {
+        div {
             .title {
+                line-height: 26px;
+                font-size: 11px;
+                font-weight: 700;
+                
+                color: #020309;
+                margin: 0;
             }
 
             .list {
-                
+                padding-bottom: 16px;
                 &__element {
+                    display: inline-block;
+                    margin-right: 16px;
+                    height: 24px;
+                }
+                &__link {
+                    display: flex;
+                    position: relative;
+                    text-decoration: underline;
+                    font-size: 11px;
+                    font-weight: 700;
+                    color: #66676c;
 
-                    &__link{
-
+                    &:hover{
+                        text-decoration: none;
                     }
-
-
                 }
             }
         }
@@ -202,3 +219,4 @@ body {
         }
     }
 }
+

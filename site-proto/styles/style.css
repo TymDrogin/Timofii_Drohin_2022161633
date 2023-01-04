@@ -129,12 +129,10 @@ body {
 }
 
 .main {
-  background-image: url("../img/banners/bg-flyer.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
   background-color: white;
   width: 100%;
-  height: 1000px;
 }
 .main__poster-block {
   display: none;
@@ -150,6 +148,33 @@ body {
 .main__nav-list {
   padding: 0 8px;
 }
+.main__nav-list div .title {
+  line-height: 26px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #020309;
+  margin: 0;
+}
+.main__nav-list div .list {
+  padding-bottom: 16px;
+}
+.main__nav-list div .list__element {
+  display: inline-block;
+  margin-right: 16px;
+  height: 24px;
+}
+.main__nav-list div .list__link {
+  display: flex;
+  position: relative;
+  text-decoration: underline;
+  font-size: 11px;
+  font-weight: 700;
+  color: #66676c;
+}
+.main__nav-list div .list__link:hover {
+  text-decoration: none;
+}
+
 .links-list .category {
   font-weight: bolder;
 }
