@@ -126,6 +126,42 @@ body {
   color: #0071CE;
   cursor: pointer;
 }
+.page-footer__bottom {
+  display: block;
+  width: 100%;
+  background-color: #ebecef;
+  padding: 48px 0;
+}
+.page-footer__bottom .navigation {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  max-width: 1240px;
+}
+.page-footer__bottom .navigation__block {
+  flex-basis: calc(25% - 32px);
+  margin: 0 16px;
+}
+.page-footer__bottom .navigation__block .title {
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: 500;
+  color: #020309;
+  margin: 0;
+  margin-bottom: 16px;
+}
+.page-footer__bottom .navigation__block .list {
+  list-style: none;
+}
+.page-footer__bottom .navigation__block .list__element__text {
+  font-size: 12px;
+  line-height: 14px;
+  color: #020309;
+  margin: 0;
+  margin-bottom: 0px;
+  margin-bottom: 16px;
+}
 
 .main {
   background-image: url("../img/banners/bg-flyer.jpg");
@@ -327,6 +363,9 @@ body {
   margin: 0;
   margin-bottom: 2px;
 }
+.search-menu__form .fields .block__field {
+  display: flex;
+}
 .search-menu__form .fields .block__field__input {
   background-color: #ebecef;
   z-index: 10;
@@ -340,6 +379,7 @@ body {
   border: 1px solid #ebecef;
   border-radius: 5px;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05);
+  margin-right: 5px;
 }
 .search-menu__form .fields .block__field__input:hover {
   cursor: pointer;
