@@ -62,7 +62,6 @@ body {
     box-sizing: border-box;
 
     &__container {
-        z-index: 50;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -120,7 +119,7 @@ body {
     &__right {
         display: block;
         width: 100%;
-        height: 100%;
+        height: 90%;
         .nav-container {
             align-items: center;
             margin-left: 15px;
