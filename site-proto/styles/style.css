@@ -108,15 +108,13 @@ body {
   justify-content: center;
 }
 .page-footer__top .text {
-  box-sizing: border-box;
-  display: block;
   color: white;
   margin-right: 24px;
-  line-height: 18px;
+  line-height: 45px;
 }
 .page-footer__top .button {
   box-sizing: border-box;
-  background-color: transparent;
+  background-color: #0071CE;
   color: white;
   font-weight: 600;
   border: 2px solid white;
@@ -124,19 +122,20 @@ body {
   border-radius: 4px;
 }
 .page-footer__top .button:hover {
-  border-width: 6px;
+  background: white;
+  color: #0071CE;
   cursor: pointer;
 }
 
 .main {
+  background-image: url("../img/banners/bg-flyer.jpg");
   background-repeat: no-repeat;
   background-position-x: center;
   background-color: white;
   width: 100%;
 }
 .main__poster-block {
-  display: none;
-  justify-content: center;
+  display: block;
   padding: 16px;
 }
 .main__poster-block__image {
@@ -145,46 +144,57 @@ body {
   border-radius: 4px;
   margin: 5px;
 }
-.main__nav-list {
+.main__link-list {
+  display: block;
   padding: 0 8px;
 }
-.main__nav-list div .title {
+.main__link-list div .title {
   line-height: 26px;
-  font-size: 11px;
-  font-weight: 700;
+  font-size: 12px;
+  font-weight: 600;
   color: #020309;
   margin: 0;
 }
-.main__nav-list div .list {
-  padding-bottom: 16px;
+.main__link-list div .list {
+  padding: 0 0 16px 0;
+  margin: 0;
+  list-style: none;
 }
-.main__nav-list div .list__element {
+.main__link-list div .list__element {
   display: inline-block;
   margin-right: 16px;
   height: 24px;
 }
-.main__nav-list div .list__link {
+.main__link-list div .list__element__link {
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  color: #66676c;
   display: flex;
   position: relative;
-  text-decoration: underline;
-  font-size: 11px;
-  font-weight: 700;
-  color: #66676c;
 }
-.main__nav-list div .list__link:hover {
+.main__link-list div .list__element__link:hover {
   text-decoration: none;
 }
 
-.links-list .category {
-  font-weight: bolder;
+.grid {
+  display: block;
 }
-.links-list .link {
-  font-weight: bolder;
-  -webkit-text-decoration: underline solid gray;
-          text-decoration: underline solid gray;
-  color: gray;
+.grid__body {
+  display: grid;
+  grid-gap: 24px 16px;
+  grid-template-columns: auto repeat(2, 580px) auto;
+  grid-template-rows: 0 560px repeat(2, 100px) auto;
 }
-.links-list .link:hover {
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
+.grid__body__search-menu {
+  display: block;
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.search-menu {
+  display: flex;
+  height: 100%;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
 }/*# sourceMappingURL=style.css.map */
