@@ -135,7 +135,9 @@ body {
   width: 100%;
 }
 .main__poster-block {
-  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   padding: 16px;
 }
 .main__poster-block__image {
@@ -145,12 +147,14 @@ body {
   margin: 5px;
 }
 .main__link-list {
-  display: block;
+  display: flex;
+  flex-direction: column;
   padding: 0 8px;
+  padding-left: 25%;
 }
 .main__link-list div .title {
   line-height: 26px;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 600;
   color: #020309;
   margin: 0;
@@ -167,7 +171,7 @@ body {
 }
 .main__link-list div .list__element__link {
   display: flex;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 600;
   color: #66676c;
   display: flex;
@@ -184,12 +188,44 @@ body {
   display: grid;
   grid-gap: 24px 16px;
   grid-template-columns: auto repeat(2, 580px) auto;
-  grid-template-rows: 0 560px repeat(2, 100px) auto;
+  grid-template-rows: 0 560px 720px 0 320px auto;
 }
 .grid__body__search-menu {
   display: block;
   grid-row: 2;
   grid-column: 2;
+}
+.grid__body__block-1 {
+  display: block;
+  grid-row: 3/4;
+  grid-column: 2/3;
+}
+.grid__body__block-2 {
+  display: block;
+  height: 100%;
+  width: 100%;
+  grid-row: 3/4;
+  grid-column: 3/4;
+}
+.grid__body__block-2 .block-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.grid__body__block-3 {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  grid-row: 5/6;
+  grid-column: 2/3;
+}
+.grid__body__block-4 {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  grid-row: 5/6;
+  grid-column: 3/4;
 }
 
 .search-menu {
@@ -268,17 +304,20 @@ body {
   margin-bottom: 16px;
 }
 .search-menu__form .fields {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-gap: 0 12px;
   width: 100%;
   height: 100%;
 }
 .search-menu__form .fields .block {
-  width: 50%;
+  width: 90%;
   margin-right: 24px;
   margin-bottom: 16px;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
 }
 .search-menu__form .fields .block__title {
   font-size: 15px;
@@ -289,7 +328,7 @@ body {
   margin-bottom: 2px;
 }
 .search-menu__form .fields .block__field__input {
-  background-color: #EBECEF;
+  background-color: #ebecef;
   z-index: 10;
   width: 100%;
   height: 44px;
@@ -297,8 +336,8 @@ body {
   line-height: 20px;
   padding-left: 16px;
   font-family: "Lato", sans-serif;
-  color: #66676C;
-  border: 1px solid #EBECEF;
+  color: #66676c;
+  border: 1px solid #ebecef;
   border-radius: 5px;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.05);
 }
@@ -307,4 +346,68 @@ body {
 }
 .search-menu__form .fields .block__field__input:focus {
   cursor: text;
+}
+
+.product-tile {
+  z-index: 20;
+  display: block;
+  border: 3px solid white;
+  border-radius: 10px;
+  box-shadow: rgba(20, 35, 85, 0.421) 0px 2px 6px 0;
+  margin: 2px;
+}
+.product-tile__image {
+  z-index: 10;
+  display: block;
+  width: 100%;
+}
+.product-tile__info {
+  background-color: #fff;
+}
+.product-tile__info .info {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
+.product-tile__info .info .first-row {
+  margin-bottom: 4px;
+  line-height: 38px;
+  font-weight: 800;
+  color: #020309;
+  font-size: 16px;
+}
+.product-tile__info .info .second-row {
+  flex-wrap: wrap;
+  margin-bottom: 8px;
+  padding: 0;
+}
+.product-tile__info .info .second-row .item {
+  display: inline-block;
+  position: relative;
+  padding-right: 16px;
+  font-size: 17px;
+}
+.product-tile__info .info .second-row .item::after {
+  display: block;
+  position: absolute;
+  content: "";
+  width: 2px;
+  height: 2px;
+  background: #020309;
+  border-radius: 50%;
+  top: 50%;
+  right: 8px;
+  transform: translateY(-50%);
+}
+.product-tile__info .price {
+  line-height: 24px;
+  font-weight: 800;
+  font-size: 22px;
+  color: #c82814;
+  margin: 0;
+}
+.product-tile__info .price .current {
+  padding-left: 4px;
+  font-size: 12px;
+  line-height: 20px;
 }/*# sourceMappingURL=style.css.map */
